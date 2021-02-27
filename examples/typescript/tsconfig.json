@@ -1,0 +1,8 @@
+{
+	"compilerOptions": {
+		// Highly recommended TS configurations to match behavior with esbuild
+		// https://esbuild.github.io/content-types/#typescript
+		"isolatedModules": true,
+		"esModuleInterop": true
+	}
+}
