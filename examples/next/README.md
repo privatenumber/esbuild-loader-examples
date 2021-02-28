@@ -1,4 +1,4 @@
-# <!-- name:start -->next.js<!-- name:end -->
+# <!-- name:start -->next<!-- name:end -->
 
 <!-- description:start -->Next.js app using esbuild-loader<!-- description:end -->
 

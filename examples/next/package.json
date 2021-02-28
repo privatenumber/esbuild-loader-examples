@@ -1,5 +1,5 @@
 {
-	"name": "next.js",
+	"name": "next",
 	"description": "Next.js app using esbuild-loader",
 	"scripts": {
 		"dev": "next dev",
