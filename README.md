@@ -1,7 +1,7 @@
 # esbuild-loader examples
-This repo contains usage examples for [esbuild-loader](https://github.com/privatenumber/esbuild-loader).
+This repo contains usage examples for [esbuild-loader](https://github.com/privatenumber/esbuild-loader) that demonstrate setup.
 
-Feel free to contribute more examples!
+Feel free to contribute!
 
 ## Examples
 <!-- examples:start -->
