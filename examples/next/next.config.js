@@ -1,7 +1,4 @@
-const {
-	ESBuildPlugin,
-	ESBuildMinifyPlugin,
-} = require('esbuild-loader');
+const { ESBuildMinifyPlugin } = require('esbuild-loader');
 
 function useEsbuildMinify(config, options) {
 	const terserIndex = config.optimization.minimizer.findIndex(minimizer => (minimizer.constructor.name === 'TerserPlugin'));
@@ -26,7 +23,6 @@ function useEsbuildLoader(config, options) {
 module.exports = {
 	webpack: (config, { webpack }) => {
 		config.plugins.push(
-			new ESBuildPlugin(),
 			new webpack.ProvidePlugin({
 				React: 'react',
 			}),

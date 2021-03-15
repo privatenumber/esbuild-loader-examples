@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { ESBuildPlugin, ESBuildMinifyPlugin } = require('esbuild-loader');
+const { ESBuildMinifyPlugin } = require('esbuild-loader');
 const { ProvidePlugin } = require('webpack');
 
 module.exports = {
@@ -35,7 +35,6 @@ module.exports = {
 	},
 
 	plugins: [
-		new ESBuildPlugin(),
 		new HtmlWebpackPlugin(),
 		new ProvidePlugin({
 			React: 'react',
