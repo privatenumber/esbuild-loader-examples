@@ -1,5 +1,5 @@
 {
-  "name": "basic-setup",
+  "name": "minification-bug",
   "description": "Basic setup using esbuild-loader as an alternative to babel-loader",
   "main": "dist/main.js",
   "scripts": {
