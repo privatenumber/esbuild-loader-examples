@@ -12,31 +12,31 @@ importers:
 
   examples/basic-setup:
     specifiers:
-      esbuild-loader: ^2.12.0
+      esbuild-loader: ^2.13.1
       webpack: ^5.24.2
       webpack-cli: ^4.5.0
     devDependencies:
-      esbuild-loader: 2.12.0_webpack@5.24.2
+      esbuild-loader: 2.13.1_webpack@5.24.2
       webpack: 5.24.2_webpack-cli@4.5.0
       webpack-cli: 4.5.0_webpack@5.24.2
 
   examples/bring-your-own-esbuild:
     specifiers:
       esbuild: latest
-      esbuild-loader: ^2.12.0
+      esbuild-loader: ^2.13.1
       typescript: ^4.2.2
       webpack: ^5.24.2
       webpack-cli: ^4.5.0
     devDependencies:
-      esbuild: 0.11.11
-      esbuild-loader: 2.12.0_webpack@5.24.2
+      esbuild: 0.11.23
+      esbuild-loader: 2.13.1_webpack@5.24.2
       typescript: 4.2.2
       webpack: 5.24.2_webpack-cli@4.5.0
       webpack-cli: 4.5.0_webpack@5.24.2
 
   examples/next:
     specifiers:
-      esbuild-loader: ^2.12.0
+      esbuild-loader: ^2.13.1
       next: 10.0.7
       react: 17.0.1
       react-dom: 17.0.1
@@ -46,12 +46,12 @@ importers:
       react: 17.0.1
       react-dom: 17.0.1_react@17.0.1
     devDependencies:
-      esbuild-loader: 2.12.0_webpack@5.24.2
+      esbuild-loader: 2.13.1_webpack@5.24.2
       webpack: 5.24.2
 
   examples/react:
     specifiers:
-      esbuild-loader: ^2.12.0
+      esbuild-loader: ^2.13.1
       html-webpack-plugin: ^5.2.0
       react: ^17.0.1
       react-dom: ^17.0.1
@@ -63,7 +63,7 @@ importers:
       react: 17.0.1
       react-dom: 17.0.1_react@17.0.1
     devDependencies:
-      esbuild-loader: 2.12.0_webpack@5.24.2
+      esbuild-loader: 2.13.1_webpack@5.24.2
       html-webpack-plugin: 5.2.0_webpack@5.24.2
       serv: 0.2.4
       typescript: 4.2.2
@@ -72,12 +72,12 @@ importers:
 
   examples/typescript:
     specifiers:
-      esbuild-loader: ^2.12.0
+      esbuild-loader: ^2.13.1
       typescript: ^4.2.2
       webpack: ^5.24.2
       webpack-cli: ^4.5.0
     devDependencies:
-      esbuild-loader: 2.12.0_webpack@5.24.2
+      esbuild-loader: 2.13.1_webpack@5.24.2
       typescript: 4.2.2
       webpack: 5.24.2_webpack-cli@4.5.0
       webpack-cli: 4.5.0_webpack@5.24.2
@@ -1103,28 +1103,23 @@ packages:
     resolution: {integrity: sha512-iuEGihqqhKWFgh72Q/Jtch7V2t/ft8w8IPP2aEN8ArYKO+IWyo6hsi96hCdgyeEDQIV3InhYQ9BlwUFPGXrbEQ==}
     dev: true
 
-  /esbuild-loader/2.12.0_webpack@5.24.2:
-    resolution: {integrity: sha512-wQJ8tryOYC5CsG62scwX92HIlY0kgH+28xPz+3pxGZlexkQJYZF0kN97iVR6pyzGzfGhTPD7pabdqVnYF7HMVw==}
+  /esbuild-loader/2.13.1_webpack@5.24.2:
+    resolution: {integrity: sha1-nInmVDkKmiXZmy9tgDreMPQzVBg=}
     peerDependencies:
       webpack: ^4.40.0 || ^5.0.0
     dependencies:
-      esbuild: 0.10.2
+      esbuild: 0.11.23
       joycon: 3.0.1
       json5: 2.2.0
       loader-utils: 2.0.0
+      tapable: 2.2.0
       type-fest: 1.0.1
       webpack: 5.24.2_webpack-cli@4.5.0
       webpack-sources: 2.2.0
     dev: true
 
-  /esbuild/0.10.2:
-    resolution: {integrity: sha512-/5vsZD7wTJJHC3yNXLUjXNvUDwqwNoIMvFvLd9tcDQ9el5l13pspYm3yufavjIeYvNtAbo+6N/6uoWx9dGA6ug==}
-    hasBin: true
-    requiresBuild: true
-    dev: true
-
-  /esbuild/0.11.11:
-    resolution: {integrity: sha512-iq5YdV63vY/nUAFIvY92BXVkYjMbOchnofLKoLKMPZIa4uuIJAJG9WRA+ZRjQBZbrsORUwvZcANeG2d3p46PJQ==}
+  /esbuild/0.11.23:
+    resolution: {integrity: sha1-xCU09jLhZRIGcdZNtniDY0MztLg=}
     hasBin: true
     requiresBuild: true
     dev: true
@@ -1595,7 +1590,7 @@ packages:
     dev: true
 
   /joycon/3.0.1:
-    resolution: {integrity: sha512-SJcJNBg32dGgxhPtM0wQqxqV0ax9k/9TaUskGDSJkSFSQOEWWvQ3zzWdGQRIUry2j1zA5+ReH13t0Mf3StuVZA==}
+    resolution: {integrity: sha1-kHTJsIzPN6Zyb/dKGEhfhe/K3a8=}
     engines: {node: '>=10'}
     dev: true
 
@@ -2886,7 +2881,7 @@ packages:
     dev: false
 
   /type-fest/1.0.1:
-    resolution: {integrity: sha512-+UTPE7JT3O+sUpRroRgQAbbSfIRBwOHh+o/oruB1JJE6g6uBm3Y0D82fO3xu8VHfxJLQjeRp0PEY6mRmh/lElA==}
+    resolution: {integrity: sha1-JJRFXmXFkXDsmL3aBbfXGE9bdK0=}
     engines: {node: '>=10'}
     dev: true
 

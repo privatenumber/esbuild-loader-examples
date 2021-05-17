@@ -6,7 +6,7 @@
     "build": "webpack"
   },
   "devDependencies": {
-    "esbuild-loader": "^2.12.0",
+    "esbuild-loader": "^2.13.1",
     "webpack": "^5.24.2",
     "webpack-cli": "^4.5.0"
   }
