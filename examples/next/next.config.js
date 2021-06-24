@@ -1,23 +1,22 @@
 const { ESBuildMinifyPlugin } = require('esbuild-loader');
 
 function useEsbuildMinify(config, options) {
-	const terserIndex = config.optimization.minimizer.findIndex(minimizer => (minimizer.constructor.name === 'TerserPlugin'));
-	if (terserIndex > -1) {
-		config.optimization.minimizer.splice(
-			terserIndex,
-			1,
-			new ESBuildMinifyPlugin(options),
-		);
-	}
+	const { minimizer } = config.optimization;
+	const terserIndex = minimizer.findIndex(
+		minifier => minifier.constructor.name === 'TerserPlugin',
+	);
+	
+	minimizer.splice(terserIndex, 1, new ESBuildMinifyPlugin(options));
 }
 
 function useEsbuildLoader(config, options) {
-	const jsLoader = config.module.rules.find(rule => rule.test && rule.test.test('.js'));
+	const { rules } = config.module;
+	const babelIndex = rules.findIndex(rule => rule.test.test('.js'));
 
-	if (jsLoader) {
-		jsLoader.use.loader = 'esbuild-loader';
-		jsLoader.use.options = options;
-	}
+	rules[babelIndex].use = {
+		loader: 'esbuild-loader',
+		options,
+	};
 }
 
 module.exports = {
@@ -29,9 +28,8 @@ module.exports = {
 		);
 
 		useEsbuildMinify(config);
-
 		useEsbuildLoader(config, {
-			// Specify `tsx` if you're using TypeSCript
+			// Specify `tsx` if you're using TypeScript
 			loader: 'jsx',
 			target: 'es2017',
 		});
