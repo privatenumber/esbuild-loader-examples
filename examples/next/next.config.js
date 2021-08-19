@@ -12,7 +12,7 @@ function useEsbuildMinify(config, options) {
 }
 
 function useEsbuildLoader(config, options) {
-	// Specify `ts` if you're using TypeSCript
+	// Specify `ts` if you're using TypeScript
 	const jsLoader = config.module.rules.find(rule => rule.test && rule.test.test('.js'));
 
 	if (jsLoader) {
@@ -32,7 +32,7 @@ module.exports = {
 		useEsbuildMinify(config);
 
 		useEsbuildLoader(config, {
-			// Specify `tsx` if you're using TypeSCript
+			// Specify `tsx` if you're using TypeScript
 			loader: 'jsx',
 			target: 'es2017',
 		});
