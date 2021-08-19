@@ -12,6 +12,7 @@ function useEsbuildMinify(config, options) {
 }
 
 function useEsbuildLoader(config, options) {
+	// Specify `ts` if you're using TypeSCript
 	const jsLoader = config.module.rules.find(rule => rule.test && rule.test.test('.js'));
 
 	if (jsLoader) {
