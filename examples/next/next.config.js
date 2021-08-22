@@ -11,9 +11,9 @@ function useEsbuildMinify(config, options) {
 
 function useEsbuildLoader(config, options) {
 	const { rules } = config.module;
-	const babelIndex = rules.findIndex(rule => rule.test.test('.js'));
+	const rule = rules.find(rule => rule.test.test('.js'));
 
-	rules[babelIndex].use = {
+	rule.use = {
 		loader: 'esbuild-loader',
 		options,
 	};
