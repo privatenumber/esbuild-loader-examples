@@ -21,6 +21,9 @@ module.exports = {
 				options: {
 					loader: 'jsx',
 					target: 'es2015',
+					// This will make esbuild automatically generate import statements,
+					// making the ProviderPlugin unnecesary if used only for "react"
+					jsx: 'automatic',
 				},
 			},
 		],
@@ -36,8 +39,5 @@ module.exports = {
 
 	plugins: [
 		new HtmlWebpackPlugin(),
-		new ProvidePlugin({
-			React: 'react',
-		}),
 	],
 };
