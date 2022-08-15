@@ -22,7 +22,9 @@ module.exports = {
 					loader: 'jsx',
 					target: 'es2015',
 					// This will make esbuild automatically generate import statements,
-					// making the ProviderPlugin unnecesary if used only for "react"
+					// making the ProviderPlugin unnecesary if used only for "react".
+					// Note that this option makes sense only when used in conjuction
+					// with React >17
 					jsx: 'automatic',
 				},
 			},
@@ -34,6 +36,10 @@ module.exports = {
 		minimizer: [
 			// Use esbuild to minify
 			new ESBuildMinifyPlugin(),
+			// This is required only if your React version required explicit jsx-runtime (React <17)
+			//new ProvidePlugin({
+			//	React: 'react',
+			//}),
 		],
 	},
 
