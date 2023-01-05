@@ -57,15 +57,15 @@ importers:
     specifiers:
       esbuild-loader: ^2.20.0
       html-webpack-plugin: ^5.5.0
-      react: ^17.0.1
-      react-dom: ^17.0.1
+      react: ^18.2.0
+      react-dom: ^18.2.0
       serv: ^0.2.4
       typescript: ^4.9.4
       webpack: ^5.75.0
       webpack-cli: ^5.0.1
     dependencies:
-      react: 17.0.1
-      react-dom: 17.0.1_react@17.0.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     devDependencies:
       esbuild-loader: 2.20.0_webpack@5.75.0
       html-webpack-plugin: 5.5.0_webpack@5.75.0
@@ -4177,6 +4177,16 @@ packages:
       scheduler: 0.20.1
     dev: false
 
+  /react-dom/18.2.0_react@18.2.0:
+    resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
+    peerDependencies:
+      react: ^18.2.0
+    dependencies:
+      loose-envify: 1.4.0
+      react: 18.2.0
+      scheduler: 0.23.0
+    dev: false
+
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
@@ -4191,6 +4201,13 @@ packages:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
+    dev: false
+
+  /react/18.2.0:
+    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      loose-envify: 1.4.0
     dev: false
 
   /read-pkg-up/7.0.1:
@@ -4398,6 +4415,12 @@ packages:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
+    dev: false
+
+  /scheduler/0.23.0:
+    resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
+    dependencies:
+      loose-envify: 1.4.0
     dev: false
 
   /schema-utils/3.1.1:
