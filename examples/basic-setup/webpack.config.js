@@ -8,7 +8,7 @@ module.exports = {
 
 	output: {
 		libraryTarget: 'commonjs',
-		path: path.resolve(__dirname, `./dist/`),
+		path: path.resolve(__dirname, './dist/'),
 	},
 
 	module: {

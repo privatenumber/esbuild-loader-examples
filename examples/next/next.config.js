@@ -5,7 +5,7 @@ function useEsbuildMinify(config, options) {
 	const terserIndex = minimizer.findIndex(
 		minifier => minifier.constructor.name === 'TerserPlugin',
 	);
-	
+
 	minimizer.splice(terserIndex, 1, new ESBuildMinifyPlugin(options));
 }
 
