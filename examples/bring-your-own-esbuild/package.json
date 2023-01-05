@@ -7,9 +7,9 @@
 	},
 	"devDependencies": {
 		"esbuild": "latest",
-		"esbuild-loader": "^2.13.1",
-		"typescript": "^4.2.2",
-		"webpack": "^5.24.2",
-		"webpack-cli": "^4.5.0"
+		"esbuild-loader": "^2.20.0",
+		"typescript": "^4.9.4",
+		"webpack": "^5.75.0",
+		"webpack-cli": "^5.0.1"
 	}
 }
