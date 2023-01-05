@@ -1,12 +1,13 @@
 {
 	"private": true,
-	"husky": {
-		"hooks": {
-			"pre-commit": "node update-index.js && git add examples"
-		}
+	"scripts": {
+		"prepare": "simple-git-hooks"
+	},
+	"simple-git-hooks": {
+		"pre-commit": "node update-index.js && git add examples"
 	},
 	"devDependencies": {
 		"comment-mark": "^1.0.0",
-		"husky": "^4.3.8"
+		"simple-git-hooks": "^2.8.1"
 	}
 }
