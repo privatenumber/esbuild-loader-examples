@@ -4,10 +4,10 @@ importers:
 
   .:
     specifiers:
-      comment-mark: ^1.0.0
+      comment-mark: ^1.1.1
       simple-git-hooks: ^2.8.1
     devDependencies:
-      comment-mark: 1.0.0
+      comment-mark: 1.1.1
       simple-git-hooks: 2.8.1
 
   examples/basic-setup:
@@ -936,8 +936,8 @@ packages:
     resolution: {integrity: sha512-pRxBna3MJe6HKnBGsDyMv8ETbptw3axEdYHoqNh7gu5oDcew8fs0xnivZGm06Ogk8zGAJ9VX+OPEr2GXEQK4dg==}
     engines: {node: '>= 10'}
 
-  /comment-mark/1.0.0:
-    resolution: {integrity: sha512-zDpcfnhcUbuHBEvg5esmXoCeuXWUEsNlizMJe77TEKVc9V+sFuotoO0rIKNajVBWgo3MZF0KVFEH85pcCFHTNw==}
+  /comment-mark/1.1.1:
+    resolution: {integrity: sha512-KxFiXpu1/srgsSrftM/whqTpHZUX+BO3bgsToDNNJSqqsGP48sngnAIC+Cms+cCsDl9TQb7rlAVyfKDBdPQcaA==}
     dev: true
 
   /commondir/1.0.1:
