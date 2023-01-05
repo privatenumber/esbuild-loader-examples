@@ -1,13 +1,13 @@
 {
-  "name": "basic-setup",
-  "description": "Basic setup using esbuild-loader as an alternative to babel-loader",
-  "main": "dist/main.js",
-  "scripts": {
-    "build": "webpack"
-  },
-  "devDependencies": {
-    "esbuild-loader": "^2.13.1",
-    "webpack": "^5.24.2",
-    "webpack-cli": "^4.5.0"
-  }
+	"name": "basic-setup",
+	"description": "Basic setup using esbuild-loader as an alternative to babel-loader",
+	"main": "dist/main.js",
+	"scripts": {
+		"build": "webpack"
+	},
+	"devDependencies": {
+		"esbuild-loader": "^2.13.1",
+		"webpack": "^5.24.2",
+		"webpack-cli": "^4.5.0"
+	}
 }

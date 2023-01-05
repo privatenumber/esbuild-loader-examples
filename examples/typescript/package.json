@@ -1,15 +1,15 @@
 {
-  "name": "typescript",
-  "description": "TypeScript setup using esbuild-loader as an alternative to ts-loader and using tsc for type-checking",
-  "main": "dist/main.js",
-  "scripts": {
-    "typecheck": "tsc --noEmit",
-    "build": "npm run typecheck && webpack"
-  },
-  "devDependencies": {
-    "esbuild-loader": "^2.13.1",
-    "typescript": "^4.2.2",
-    "webpack": "^5.24.2",
-    "webpack-cli": "^4.5.0"
-  }
+	"name": "typescript",
+	"description": "TypeScript setup using esbuild-loader as an alternative to ts-loader and using tsc for type-checking",
+	"main": "dist/main.js",
+	"scripts": {
+		"typecheck": "tsc --noEmit",
+		"build": "npm run typecheck && webpack"
+	},
+	"devDependencies": {
+		"esbuild-loader": "^2.13.1",
+		"typescript": "^4.2.2",
+		"webpack": "^5.24.2",
+		"webpack-cli": "^4.5.0"
+	}
 }
