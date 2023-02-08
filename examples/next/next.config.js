@@ -1,4 +1,4 @@
-const { ESBuildMinifyPlugin } = require('esbuild-loader');
+const { EsbuildPlugin } = require('esbuild-loader');
 
 function useEsbuildMinify(config, options) {
 	const { minimizer } = config.optimization;
@@ -6,7 +6,7 @@ function useEsbuildMinify(config, options) {
 		minifier => minifier.constructor.name === 'TerserPlugin',
 	);
 
-	minimizer.splice(terserIndex, 1, new ESBuildMinifyPlugin(options));
+	minimizer.splice(terserIndex, 1, new EsbuildPlugin(options));
 }
 
 function useEsbuildLoader(config, options) {
