@@ -1,12 +1,11 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { ESBuildMinifyPlugin } = require('esbuild-loader');
-const { ProvidePlugin } = require('webpack');
+const { EsbuildPlugin } = require('esbuild-loader');
 
 module.exports = {
 	mode: 'production',
 
-	entry: './src/index.js',
+	entry: './src/index.jsx',
 
 	output: {
 		path: path.resolve(__dirname, `./dist/`),
@@ -14,12 +13,10 @@ module.exports = {
 
 	module: {
 		rules: [
-			// Use esbuild as a Babel alternative
 			{
-				test: /\.js$/,
+				test: /\.[tj]sx?$/,
 				loader: 'esbuild-loader',
 				options: {
-					loader: 'jsx',
 					target: 'es2015',
 					// This will make esbuild automatically generate import statements,
 					// making the ProviderPlugin unnecesary if used only for "react".
@@ -36,11 +33,7 @@ module.exports = {
 		minimize: false,
 		minimizer: [
 			// Use esbuild to minify
-			new ESBuildMinifyPlugin(),
-			// This is required only if your React version required explicit jsx-runtime (React <17)
-			//new ProvidePlugin({
-			//	React: 'react',
-			//}),
+			new EsbuildPlugin(),
 		],
 	},
 

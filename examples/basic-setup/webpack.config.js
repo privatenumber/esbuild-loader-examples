@@ -1,5 +1,5 @@
 const path = require('path');
-const { ESBuildMinifyPlugin } = require('esbuild-loader');
+const { EsbuildPlugin } = require('esbuild-loader');
 
 module.exports = {
 	mode: 'production',
@@ -13,9 +13,8 @@ module.exports = {
 
 	module: {
 		rules: [
-			// Use esbuild as a Babel alternative
 			{
-				test: /\.js$/,
+				test: /\.[tj]sx?$/,
 				loader: 'esbuild-loader',
 				options: {
 					target: 'es2015',
@@ -27,7 +26,7 @@ module.exports = {
 	optimization: {
 		minimizer: [
 			// Use esbuild to minify
-			new ESBuildMinifyPlugin(),
+			new EsbuildPlugin(),
 		],
 	},
 };
