@@ -1,6 +1,6 @@
-# <!-- name:start -->basic-setup<!-- name:end -->
+# <!-- name:start -->less-loader<!-- name:end -->
 
-<!-- description:start -->Basic setup using esbuild-loader as an alternative to babel-loader<!-- description:end -->
+<!-- description:start -->Using esbuild-loader to minify less-loader CSS output<!-- description:end -->
 
 ## Commands
 <!-- commands:start -->- `npm run build`<!-- commands:end -->

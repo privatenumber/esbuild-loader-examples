@@ -4,7 +4,7 @@ const { EsbuildPlugin } = require('esbuild-loader');
 module.exports = {
 	mode: 'production',
 
-	entry: './src/index.js',
+	entry: './src/style.less',
 
 	output: {
 		libraryTarget: 'commonjs',
@@ -14,19 +14,25 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.[tj]sx?$/,
-				loader: 'esbuild-loader',
-				options: {
-					target: 'es2015',
-				},
-			},
-			{
-				test: /\.less$/i,
+				test: /\.less$/,
 				use: [
-				// compiles Less to CSS
-				"style-loader",
-				"css-loader",
-				"less-loader",
+					'style-loader',
+					'css-loader',
+					{
+						loader: 'esbuild-loader',
+						options: {
+							/**
+							 * Since esbuild isn't aware of the `.less` extension
+							 * it cannot auto-detect how to handle it.
+							 * 
+							 * We need to tell it to treat the output of
+							 * `less-loader` as CSS.
+							 */
+							loader: 'css',
+							minify: true,
+						},
+					},
+					'less-loader',
 				],
 			},
 		],
