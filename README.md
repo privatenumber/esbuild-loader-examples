@@ -9,6 +9,7 @@ This repo contains usage examples for [esbuild-loader](https://github.com/privat
 - [**next**](./examples/next) Next.js app using esbuild-loader
 - [**react**](./examples/react) Bare-bones React app setup
 - [**typescript**](./examples/typescript) TypeScript setup using esbuild-loader as an alternative to ts-loader and using tsc for type-checking
+- [**vue-loader**](./examples/vue-loader) Using esbuild-loader with vue-loader
 <!-- examples:end -->
 
 ## Contributing
